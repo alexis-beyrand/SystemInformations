@@ -6,4 +6,4 @@ A little API which need to be on your build path. It is designed in order to hav
 
 **FR**
 ---
-Une petite API qui doit se trouver dans le build path, elle permet d'avoir des raccourcis pour obtenir les informations système de l'utilisateur (RAM, espace disque, Architecture java (32 ou 64 bits), Version java) dans le langage java. Pour l'utiliser il faut créer une variable du type SystemInformations. Au passage, la clase ne possède pas de constructeur spécifique
+Une petite API qui doit se trouver dans le build path, elle permet d'avoir des raccourcis pour obtenir les informations système de l'utilisateur (RAM, espace disque, Architecture java (32 ou 64 bits), Version java) dans le langage java. Pour l'utiliser il faut créer une variable du type SystemInformations. Au passage, la clase ne possède pas de constructeur spécifique.
