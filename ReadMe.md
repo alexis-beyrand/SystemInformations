@@ -11,4 +11,11 @@ Une petite API qui doit se trouver dans le build path, elle permet d'avoir des r
 Avec le Commit le plus récent vous n'avez plus besoin de créer une variable, toutes les méthodes sont désormais "static final".
 
 ---
-La javadoc générée sera consultable sur le site : *Site en construction*
+
+**EN**
+The generated javaDoc will be accessible from the website : *English website under construction*
+
+---
+
+**FR**
+La javadoc générée sera consultable sur le site : http://wither-docs.alwaysdata.net/SystemInformations/index.html
