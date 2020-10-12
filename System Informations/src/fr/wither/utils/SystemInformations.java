@@ -9,7 +9,7 @@ import com.sun.management.OperatingSystemMXBean;
  * 
  * La seule et unique classe de SystemInformations, elle contient les méthodes pour obtenir les information système.
  * @author Wither
- * @version 0.1.0
+ * @version 0.2.0
  * 
  */
 
@@ -77,7 +77,7 @@ public class SystemInformations {
 	
 	/**
 	 * Méthode permettant de déterminer si le systeme est un windows ou non
-	 * @since 0.1.0
+	 * @since 0.2.0
 	 * @return
 	 * Une valeur booléenne vraie si le programme est lancé sur windows, faux sinon.
 	 */
@@ -86,7 +86,7 @@ public class SystemInformations {
 	}
 	/**
 	 * Méthode retournant le nom du système d'exploitation
-	 * @since 0.1.0
+	 * @since 0.2.0
 	 * @return
 	 * le nom de l'OS
 	 */
@@ -95,7 +95,7 @@ public class SystemInformations {
 	}
 	/**
 	 * Méthode retournant le nom de l'utilisateur du programme.
-	 * @since 0.1.0
+	 * @since 0.2.0
 	 * @return
 	 * Le nom d'utilisateur de la personne qui execute le programme
 	 */
