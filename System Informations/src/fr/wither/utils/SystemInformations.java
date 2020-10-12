@@ -21,7 +21,7 @@ public class SystemInformations {
 	}
 	
 	/**
-	 * Choix du facteur entre un octet et un Go (Gio pour etre exact dans ce cas-ci)
+	 * Choix du facteur entre un octet et un Go (Gio pour etre exact dans ce cas-ci) : {@value}
 	 */
 	public static final long BYTES_TO_GO = 1073741824 ;
 	
@@ -73,5 +73,33 @@ public class SystemInformations {
 	 */
 	public static final String getExactJavaVersion() {
 		return System.getProperty("java.version");
+	}
+	
+	/**
+	 * Méthode permettant de déterminer si le systeme est un windows ou non
+	 * @since 0.1.0
+	 * @return
+	 * Une valeur booléenne vraie si le programme est lancé sur windows, faux sinon.
+	 */
+	public static final boolean isWindows() {
+		return System.getProperty("sun.desktop").toLowerCase().contains("windows");
+	}
+	/**
+	 * Méthode retournant le nom du système d'exploitation
+	 * @since 0.1.0
+	 * @return
+	 * le nom de l'OS
+	 */
+	public static final String getOSName() {
+		return System.getProperty("os.name");
+	}
+	/**
+	 * Méthode retournant le nom de l'utilisateur du programme.
+	 * @since 0.1.0
+	 * @return
+	 * Le nom d'utilisateur de la personne qui execute le programme
+	 */
+	public static final String getUserName() {
+		return System.getProperty("user.name");
 	}
 }
