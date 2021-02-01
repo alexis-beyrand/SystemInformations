@@ -7,9 +7,9 @@ import com.sun.management.OperatingSystemMXBean;
 
 /**
  * 
- * La seule et unique classe de SystemInformations, elle contient les méthodes pour obtenir les information système.
+ * Theone and only class of SystemInformations
  * @author Wither
- * @version 0.2.0
+ * @version 0.2.1
  * 
  */
 
@@ -21,83 +21,83 @@ public class SystemInformations {
 	}
 	
 	/**
-	 * Choix du facteur entre un octet et un Go (Gio pour etre exact dans ce cas-ci) : {@value}
+	 * The factor between one byte and GigaByte : {@value}
 	 */
 	public static final long BYTES_TO_GO = 1073741824 ;
 	
 	/**
-	 * Méthode d'obtention de la RAM totale de l'ordinateur
+	 * Method to get total system's RAM
 	 * @since 0.0.1
 	 * @return
-	 * le maximum de mémoire vive(RAM) de l'ordinateur. /!\ peut être sous-estimée
+	 * The max pc's RAM /!\ May be underestimated
 	 */
 	public static final long getSystemRAM() {
 		return ((OperatingSystemMXBean)ManagementFactory.getOperatingSystemMXBean()).getTotalPhysicalMemorySize() / BYTES_TO_GO;
 	}
 	
 	/**
-	 * Méthode d'obtention du type d'architecture java
+	 * Method to get java architecture
 	 * @since 0.0.1
 	 * @return
-	 * 	Unknown, 32 ou 64 suivant l'architecture java (32 bits, 64 bits, Inconnue/Indeterminable)
+	 * 	Unknown, 32 or 64 depending on java's architecture
 	 */
 	public static final String getJavaBits() {
 		return System.getProperty("sun.arch.data.model");
 	}
 	
 	/**
-	 * Méthode d'obtention de l'espace disque
+	 * MÃ©thod to know total disk size
 	 * @since 0.0.1
 	 * @return
-	 * l'espace disque total
+	 * total disk size
 	 */
 	public static final long getDiskSize() {
 		return new File("/").getTotalSpace() / BYTES_TO_GO;
 	}
 	
 	/**
-	 * La première méthode pour la version de java
+	 * First method to get java version
 	 * @since 0.0.1
 	 * @return
-	 * la version java sous la forme X.X
+	 * java version (X.X)
 	 */
 	public static final String getJavaVersion() {
 		return System.getProperty("java.specification.version");
 	}
 	
 	/**
-	 * La seconde méthode pour la version de java
+	 * Second method to get java version
 	 * @since 0.0.1
 	 * @return
-	 * la version de java sous la forme X.X.X_XXX
+	 * java version (X.X.X_XXX)
 	 */
 	public static final String getExactJavaVersion() {
 		return System.getProperty("java.version");
 	}
 	
 	/**
-	 * Méthode permettant de déterminer si le systeme est un windows ou non
+	 * Method to know if the system is running on Windows or not
 	 * @since 0.2.0
 	 * @return
-	 * Une valeur booléenne vraie si le programme est lancé sur windows, faux sinon.
+	 * True if it is windows, false otherwise
 	 */
 	public static final boolean isWindows() {
 		return System.getProperty("sun.desktop").toLowerCase().contains("windows");
 	}
 	/**
-	 * Méthode retournant le nom du système d'exploitation
+	 * Method to get the OS name
 	 * @since 0.2.0
 	 * @return
-	 * le nom de l'OS
+	 * OS name
 	 */
 	public static final String getOSName() {
 		return System.getProperty("os.name");
 	}
 	/**
-	 * Méthode retournant le nom de l'utilisateur du programme.
+	 * Method returning the user's name
 	 * @since 0.2.0
 	 * @return
-	 * Le nom d'utilisateur de la personne qui execute le programme
+	 * User's name
 	 */
 	public static final String getUserName() {
 		return System.getProperty("user.name");
