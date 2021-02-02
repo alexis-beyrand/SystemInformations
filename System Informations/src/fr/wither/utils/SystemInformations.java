@@ -7,18 +7,13 @@ import com.sun.management.OperatingSystemMXBean;
 
 /**
  * 
- * Theone and only class of SystemInformations
+ * The one and only class of SystemInformations
  * @author Wither
  * @version 0.2.1
  * 
  */
 
 public class SystemInformations {
-	
-
-	public SystemInformations() {
-		
-	}
 	
 	/**
 	 * The factor between one byte and GigaByte : {@value}
